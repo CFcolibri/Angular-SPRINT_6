@@ -1,0 +1,8 @@
+.round-box {
+  border: 1px solid #ccc;
+  border-radius: 30px;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-color: black;
+  text-align: center;
+}
