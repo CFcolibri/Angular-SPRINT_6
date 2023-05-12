@@ -1,3 +1,6 @@
+
+
+
 .round-box {
   border: 1px solid #ccc;
   border-radius: 30px;
@@ -6,3 +9,23 @@
   border-color: black;
   text-align: center;
 }
+
+#escena-body {
+  display: flex;
+}
+
+.flex-grow-1 {
+  flex-grow: 1;
+  padding: 15px 5px;
+  margin: 3px ;
+
+}
+
+/* escena.component.css */
+.highlighted {
+  background-color: yellow; /* Change the color as desired */
+}
+
+
+
+
