@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { HistoryItem } from '../Interface/history.interface';
 
 @Component({
   selector: 'app-escena',
@@ -6,5 +7,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./escena.component.css']
 })
 export class EscenaComponent {
-
+  @Input()//input per rebre del pare
+  public historiesList: HistoryItem[] = [];
 }

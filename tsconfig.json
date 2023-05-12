@@ -22,7 +22,9 @@
     "lib": [
       "ES2022",
       "dom"
-    ]
+    ],
+    "resolveJsonModule": true,//afegit
+    "allowSyntheticDefaultImports": true //afegit
   },
   "angularCompilerOptions": {
     "enableI18nLegacyMessageIdFormat": false,
