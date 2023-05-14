@@ -1,0 +1,29 @@
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+  color: blue;
+
+}
+
+.button {
+  color: beige;
+  background-color: blue;
+  padding: 10px 10px;
+  font-size: larger;
+  box-shadow: 5px 5px 4px rgba(13, 13, 220, 0.5);
+}
+
+
+h1 {
+  text-shadow: 3px 3px 4px rgba(0, 0, 0, 0.5);
+
+}
+
+h3 {
+  padding-top: 10px;
+ color: rgb(93, 91, 91);
+}

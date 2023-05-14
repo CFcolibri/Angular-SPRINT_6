@@ -7,7 +7,7 @@ import { HistoryItem } from '../Interface/history.interface';
   styleUrls: ['./escena.component.css']
 })
 export class EscenaComponent {
-  @Input()//input per rebre del
+  @Input()//input per rebre del pare
   public historiesList: HistoryItem[] = [];
   public currentSentence = 0;
 
@@ -28,4 +28,3 @@ export class EscenaComponent {
   }
 
 }
-

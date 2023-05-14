@@ -1,7 +1,20 @@
 <!-- <p>home works!</p> -->
 <!-- <app-escena></app-escena> -->
+<!-- <div class="row"> -->
+<!-- <app-escena [historiesList] = "histories"></app-escena> ensenyem Escena(fill) amb les -->
+<!-- </div> -->
+
 <div class="row">
-<app-escena [historiesList] = "histories"></app-escena> <!--ensenyem Escena(fill) amb les historiesList-->
+  <div class="content">
+    <ng-container *ngIf="!showChildComponent">
+      <!-- Welcome Page -->
+      <h1>Welcome to the Space!</h1>
+      <button class="button" (click)="toggleChildComponent()">Start here!</button>
+      <h3>by Carlota Figueras</h3>
+    </ng-container>
+    <ng-container *ngIf="showChildComponent">
+      <!-- Child Component -->
+      <app-escena [historiesList]="histories"></app-escena>
+    </ng-container>
+  </div>
 </div>
-
-
