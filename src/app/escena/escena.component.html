@@ -1,21 +1,21 @@
 <!-- <p>El nostre heroi estava surant per l'espai sideral quan a la llunyania va albirar una nau espacial</p> -->
-<!-- <div [ngStyle]="{'background-image': 'url(' + historiesList + ')'}"></div> -->
-<!-- <div id="escena-body" class="pt-4" [style.backgroundImage]="historiesList[currentSentence].img"></div> -->
+
+<div class="b-image"  [style.background-image]="'url(' + historiesList[currentSentence].img  + ')'">
+
+  <div id="escena-body" class="d-flex">
+    <button class="btn btn-light border-1 border-dark-subtle flex-grow-1 w-100" (click)="prev()">
+      Anterior
+    </button>
+    <button class="btn btn-light border-1 border-dark-subtle flex-grow-1 w-100" (click)="next()">
+      Següent
+    </button>
+  </div>
 
 
-<div id="escena-body" class="d-flex">
-  <button class="btn btn-light border-1 border-dark-subtle flex-grow-1 w-100" (click)="prev()">
-    Anterior
-  </button>
-  <button class="btn btn-light border-1 border-dark-subtle flex-grow-1 w-100" (click)="next()">
-    Següent
-  </button>
-</div>
-
-<div>
-  <span class="sentenceList" *ngFor="let histories of historiesList; let i = index;"><!--amb ngFor cridem la historiesList de Escena.ts -->
-    <p class="round-box" [ngClass]="{'highlighted': isCurrentSentence(i)}">
-      {{ histories.txt }}</p> <!--<p> utilitzo per ensenyar cada frase en una linia-->
-
-  </span>
+  <div>
+    <span class="sentenceList" *ngFor="let histories of historiesList; let i = index;"><!--amb ngFor cridem la historiesList de Escena.ts -->
+      <p class="round-box" [ngClass]="{'highlighted': isCurrentSentence(i)}">
+        {{ histories.txt }}</p> <!--<p> utilitzo per ensenyar cada frase en una linia-->
+    </span>
+  </div>
 </div>
